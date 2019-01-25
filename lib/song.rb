@@ -1,4 +1,5 @@
 class Song
+<<<<<<< HEAD
   @@artists = [] 
   @@genres = []
   @@count = 0
@@ -13,6 +14,20 @@ class Song
     @@count += 1
     @@artists << artist
     @@genres << genre
+=======
+  @@artist = [] 
+  @@genre = []
+  @@count = 0
+  attr_accessor :name, :artist, :genre
+
+  def initialize(name, artist, genre)
+    @name = name
+  @artist = artist 
+    @genre = genre
+    @@count += 1
+     @@artist == ["OMG"]
+     @@genre << @genre
+>>>>>>> e2cc63fe26a38d5a2d3d0f97c2229b2d0aaafc6f
   end
 
   # def self.compile_artists(artist) 
@@ -21,6 +36,7 @@ class Song
   #   end
   #   @@artist 
   # end
+<<<<<<< HEAD
 
     
   def self.artists
@@ -55,6 +71,21 @@ class Song
       puts "artist =  #{@@artists}"
       test.artist
       Song.class_variable_get(:@@artists)
+=======
+  
+  def self.artist
+    @@artist
+  end
+
+  # def self.artist_count
+  #   artist_count = {}
+  # @@artist.each do |artist|
+  #   artist_count[artist] ||= 0
+  #   artist_count[artist] += 1
+  # end
+  # artist_count
+  # end
+>>>>>>> e2cc63fe26a38d5a2d3d0f97c2229b2d0aaafc6f
 
 
 
